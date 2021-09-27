@@ -1,0 +1,105 @@
+/* Author: RON GRIFFO */
+/* Version: RON GRIFFO 2.0 */
+/* Code: CODE BY RON GRIFFO */
+
+/* Fonts */
+@font-face { font-family: ProximaNova; src: url(/fonts/ProximaNova.otf); }
+@font-face { font-family: ProximaNovaEB; src: url(/fonts/ProximaNovaEB.otf); }
+@font-face { font-family: ProximaNova-Light; src: url(/fonts/ProximaNova-Light.otf); }
+@font-face { font-family: ProximaNova-Bold; src: url(/fonts/ProximaNova-Bold.otf); }
+
+/* Global CSS */
+body { margin: 0; padding: 0; background: #262626; line-height: 22px; font-size: 14px; font-family: 'Open Sans', sans-serif; color: #FFF; min-height: 100%; font-weight: 300; }
+*, *:before, *:after { box-sizing: border-box; }
+.btn, button { font-family: 'Open Sans', sans-serif; border: 2px solid #4da5f5; cursor: pointer; color: #ffffff; background: transparent; font-size: 13px; padding: 15px 40px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; border-radius: 33px; -moz-border-radius: 33px; -khtml-border-radius: 33px; -webkit-border-radius: 33px; -webkit-transition: all 200ms linear; -moz-transition: all 200ms linear; -o-transition: all 200ms linear; -ms-transition: all 200ms linear; transition: all 200ms linear; }
+.btn:hover, button:hover { background-color: #4da5f5; color: #FFF; transform: scale(1.07); -ms-transform: scale(1.07); -webkit-transform: scale(1.07); }
+h1, h2, h3, h4, h5 { font-family: "Raleway", san-serif; color: #FFF; font-weight: bold; }
+h1, .intro .subHead { font-size: 57px; }
+h2 { font-size: 40px; }
+h3 { font-size: 28px; }
+h4 { font-size: 20px; line-height: 33px; margin: 40px 0 20px; font-weight: 900; }
+h5 { font-size: 18px; line-height: 27px; }
+input[type=text], input[type=password], input[type=submit], input[type=button], textarea, button, select { -moz-appearance: none; -webkit-appearance: none; }
+form input, form textarea { background: #FFF; border: 0 none; width: 100%; padding: 15px; margin: 7px 0 20px; color: #494949; border-radius: 2px; }
+form { text-align: left; margin: 25px auto; width: 300px; }
+form button { margin: 20px 0 0; }
+a { color: #4da5f5; text-decoration: none; }
+input:focus, textarea:focus { background: #4da5f5; color: #FFF; }
+
+/* Blinking Cursor */
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+/* Portfolio Grid */
+.portGrid { padding: 0; margin: 0; list-style: none; overflow: hidden; overflow: hidden; position: absolute; left: 0; top: 0; }
+.portItem { float: left; width: 20%; text-align: center; color: #FFF; line-height: 0; position: relative; cursor: pointer !important; overflow: hidden; }
+.portItem img { width: 100%; -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; cursor: pointer; }
+.portItem a { width: 100%; height: 100%; display: block; cursor: pointer; }
+.portItem:hover img { -moz-transform: scale(1.1); -webkit-transform: scale(1.1); transform: scale(1.1); }
+.portfolio { position: relative; }
+.portfolio .next { position: absolute; bottom: -50px; left: 0; right: 0; }
+
+/* Hero Specific */
+.hero { line-height: normal; text-align: center; font-family: "Raleway", san-serif; display: table; width: 100%; height: 100vh; position: relative; float: left; overflow: hidden; padding: 0 15px; background-size: cover; background-attachment: fixed !important; background-repeat: no-repeat; }
+.heroInner { display: table-cell; vertical-align: middle; }
+.hero.intro { background: url("../img/mountains.jpg"); }
+.hero.about { background: url("../img/trees.jpg"); background-repeat: no-repeat; height: 600px; padding: 16.5% 15px 80px; overflow: hidden; }
+.hero.contact { background: url("../img/road.jpg"); background-repeat: no-repeat; }
+.hero.awards { background: url("../img/clouds.jpg"); background-repeat: no-repeat; }
+.hero h1 { margin: 0 0 20px; z-index: 2; position: relative; }
+.hero .subHead { margin: 0; }
+.heroContent { width: 1140px; margin: 0 auto; }
+.hero .btn { margin-top: 30px; display: inline-block; }
+.subtitle { font-family: Raleway; font-weight: 300; font-size: 22px; line-height: 28px; letter-spacing: 0.05em; text-transform: none; }
+.skills { list-style: none; padding: 0; margin: 0; overflow: hidden; }
+.skills li { margin: 0 5% 20px 0; font-family: "Raleway", sans-serif; font-weight: 400; float: left; width: 30%; }
+.skills li:last-child { margin-right: 0; }
+.skills li p { line-height: 1.8em; margin-top: 0; }
+.skills .fa { margin: 0 0 20px 0; color: #4da5f5; display: block; font-size: 50px; }
+.skills h5 { margin-bottom: 20px; }
+.sep { border-bottom: 2px solid #FFFFFF; border-right: 0; border-left: 0; width: 100px; border-top: 0; margin: 0 auto 40px; opacity: 0.2; }
+.typed-cursor span { height: 50px; border-right: 1px solid #FFF; margin-left: 12px; }
+.typed-cursor { opacity: 1; -webkit-animation: blink 0.7s infinite; -moz-animation: blink 0.7s infinite; animation: blink 0.7s infinite; width: 1px; }
+.next { margin: 60px 0; text-align: center; display: block; color: #FFF; opacity: 0.5; font-size: 18px; }
+.next:hover { opacity: 1; }
+.next .fa { display: block; margin: 10px 0 0; }
+.logo { top: 5%; display: inline-block; left: 0; right: 0; width: 70px; margin: 0 auto; position: absolute; }
+.hero.awards .btn { margin: 0 0 40px; }
+
+/* Footer */
+footer { background: #000; color: #595959; float: left; width: 100%; clear: both; bottom: 0; position: relative; padding: 40px 15px 50px; }
+footer .inner { width: 1140px; margin: 0 auto; text-align: center; }
+footer .fa { background: #595959; color: #000; font-size: 20px; margin: 0 3px 0 3px; border-radius: 50%; text-align: center; padding: 10px; width: 40px; height: 40px; }
+footer .fa:hover { color: #eee; }
+.copyright { margin: 0 0 20px; font-size: 14px; }
+.logoFooter { width: 40px; display: block; margin: 10px auto 5px; }
+
+/* Media Queries */
+@media (max-width:1140px) {
+	.heroContent, footer .inner { width: 100%; }
+}
+@media (max-width:800px) {
+	.hero { background-size: cover!important; }
+	.portItem { width: 50%; }
+	.skills li { width: 100%; }
+	.hero.awards .btn { margin-bottom: 50px; }
+	.portGrid { position: relative; padding-bottom:100px; }
+}
+
+@media (max-width:480px) {
+	.hero h1 { font-size: 10vw; margin-bottom: 10px; }
+	form { width: 100%; }
+}
