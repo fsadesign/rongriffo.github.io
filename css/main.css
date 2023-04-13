@@ -14,7 +14,8 @@ svg { fill: #FFFFFF; width: 800px; margin: -160px auto 0; display:block; height:
 
 @media (max-width:800px) {
   body { overflow: visible; }
-  svg, .portItem { width: 100%; }
+  .portItem { width: 100%; }
+  svg { width: 90%;}
   .portGrid { position: initial; }
   svg {
     margin: 60px auto;
