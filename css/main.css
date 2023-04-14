@@ -4,7 +4,7 @@ body { margin: 0; padding: 0; overflow: hidden; height: 100vh; background: linea
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 ; }
-header { text-align: center; top: 50%; position: absolute; left: 0; right: 0; }
+header { position: absolute; height: auto; left: 50%;  top: 50%; width: 100%; text-align: center; -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%) }
 svg { fill: #FFFFFF; width: 800px; margin: -220px auto 0; display: block; height: auto; }
 .visuallyHidden { border: 0; clip: rect(0 0 0 0); -webkit-clip-path: inset(50%); clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; white-space: nowrap; }
 
@@ -22,5 +22,5 @@ svg { fill: #FFFFFF; width: 800px; margin: -220px auto 0; display: block; height
   svg { width: 90%; }
   .portGrid { position: initial; }
   svg { margin: 60px auto; }
-  header { position: initial; }
+  header { position: initial; transform: none; }
 }
