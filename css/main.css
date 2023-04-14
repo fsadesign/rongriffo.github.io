@@ -9,7 +9,7 @@ svg { fill: #FFFFFF; width: 800px; margin: -220px auto 0; display: block; height
 .visuallyHidden { border: 0; clip: rect(0 0 0 0); -webkit-clip-path: inset(50%); clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; white-space: nowrap; }
 
 /* Portfolio Grid */
-.portGrid { padding: 0; margin: 0; list-style: none; overflow: hidden; overflow: hidden; position: absolute; left: 0; bottom: 0; }
+.portGrid { padding: 0; margin: 0;  list-style: none; overflow: hidden; overflow: hidden; position: absolute; left: 0; bottom: 0; }
 .portItem { float: left; width: 25%;text-align: center; color: #FFF; line-height: 0; position: relative; cursor: pointer !important; overflow: hidden; }
 .portItem img { width: 100%; -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; cursor: pointer; }
 .portItem a { width: 100%; height: 100%; display: block; cursor: pointer; }
