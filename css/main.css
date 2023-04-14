@@ -16,7 +16,7 @@ svg { fill: #FFFFFF; width: 800px; margin: -220px auto 0; display: block; height
 .portItem:hover img { -moz-transform: scale(1.1); -webkit-transform: scale(1.1); transform: scale(1.1); }
 .portfolio { position: relative; }
 .portfolio .next { position: absolute; bottom: -50px; left: 0; right: 0; }
-@media (max-width:800px) {
+@media (max-width:860px) {
   body { overflow: visible; }
   .portItem { width: 100%; }
   svg { width: 80%; }
