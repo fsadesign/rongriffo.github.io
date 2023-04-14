@@ -1,6 +1,11 @@
-body { margin: 0; padding: 0; overflow: hidden; height: 100vh; background: #22bc96; /* Old browsers */ background: -moz-linear-gradient(top, #22bc96 0%, #119766 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #22bc96 0%, #119766 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #22bc96 0%, #119766 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#22bc96', endColorstr='#119766', GradientType=0); /* IE6-9 */ }
+body { margin: 0; padding: 0; overflow: hidden; height: 100vh; background: linear-gradient(45deg, #22D45A, #2247D4); background-size: 400% 400%; animation: GradientBackground 40s ease infinite; }
+@keyframes GradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+; }
 header { text-align: center; top: 50%; position: absolute; left: 0; right: 0; }
-svg { fill: #FFFFFF; width: 800px; margin: -160px auto 0; display:block; height: auto; }
+svg { fill: #FFFFFF; width: 800px; margin: -160px auto 0; display: block; height: auto; }
 .visuallyHidden { border: 0; clip: rect(0 0 0 0); -webkit-clip-path: inset(50%); clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; white-space: nowrap; }
 
 /* Portfolio Grid */
@@ -11,14 +16,11 @@ svg { fill: #FFFFFF; width: 800px; margin: -160px auto 0; display:block; height:
 .portItem:hover img { -moz-transform: scale(1.1); -webkit-transform: scale(1.1); transform: scale(1.1); }
 .portfolio { position: relative; }
 .portfolio .next { position: absolute; bottom: -50px; left: 0; right: 0; }
-
 @media (max-width:800px) {
   body { overflow: visible; }
   .portItem { width: 100%; }
-  svg { width: 90%;}
+  svg { width: 90%; }
   .portGrid { position: initial; }
-  svg {
-    margin: 60px auto;
-}
-header { position: initial; }
+  svg { margin: 60px auto; }
+  header { position: initial; }
 }
