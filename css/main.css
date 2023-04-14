@@ -5,7 +5,7 @@ body { margin: 0; padding: 0; overflow: hidden; height: 100vh; background: linea
   100% { background-position: 0% 50%; }
 ; }
 header { text-align: center; top: 50%; position: absolute; left: 0; right: 0; }
-svg { fill: #FFFFFF; width: 800px; margin: -210px auto 0; display: block; height: auto; }
+svg { fill: #FFFFFF; width: 800px; margin: -220px auto 0; display: block; height: auto; }
 .visuallyHidden { border: 0; clip: rect(0 0 0 0); -webkit-clip-path: inset(50%); clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; white-space: nowrap; }
 
 /* Portfolio Grid */
