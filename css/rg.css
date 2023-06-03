@@ -75,7 +75,7 @@ input:focus, textarea:focus { background: #4da5f5; color: #FFF;  }
 .next { margin: 60px 0; text-align: center; display: block; color: #FFF; opacity: 0.5; font-size: 18px; }
 .next:hover { opacity: 1; }
 .next .fa { display: block; margin: 10px 0 0; }
-.logo { top: 5%; display: inline-block; left: 0; right: 0; width: 70px; margin: 0 auto; position: absolute; }
+.logo { top: 5%; display: inline-block; left: 0; right: 0; width: 90px; margin: 0 auto; position: absolute; }
 .hero.awards .btn { margin: 0 0 40px; }
 
 /* Footer */
