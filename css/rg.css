@@ -23,7 +23,7 @@ form input, form textarea { background: #FFF; border: 0 none; width: 100%; paddi
 form { text-align: left; margin: 25px auto; width: 300px; }
 form button { margin: 20px 0 0; }
 a { color: #4da5f5; text-decoration: none; }
-input:focus, textarea:focus { background: #4da5f5; color: #FFF; }
+input:focus, textarea:focus { background: #4da5f5; color: #FFF;  }
 
 /* Blinking Cursor */
 @keyframes blink {
