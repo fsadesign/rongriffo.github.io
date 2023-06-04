@@ -88,7 +88,7 @@ footer .fa:hover { color: #eee; }
 @media (max-width:800px) {
 	.hero { background-attachment: initial !important; }
 	.portItem { width: 100%; }
-	.hero.about { padding: 0 0 60px 0; }
+	.hero.about { padding: 0 0 60px 0; background-size:cover; }
 	.portGrid { position:relative; }
 }
 @media (max-width:767px) {
