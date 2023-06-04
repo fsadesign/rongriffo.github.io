@@ -90,6 +90,7 @@ footer .fa:hover { color: #eee; }
 	.portItem { width: 100%; }
 	.hero.about { padding: 0 0 60px 0; background-size:cover; }
 	.portGrid { position:relative; }
+	.skills { padding:0 20px; }
 }
 @media (max-width:767px) {
 	.skills li { width: 100%; }
