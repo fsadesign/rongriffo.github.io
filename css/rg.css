@@ -2,11 +2,6 @@
 /* Version: RON GRIFFO 2.0 */
 /* Code: CODE BY RON GRIFFO */
 
-/* Fonts */
-@font-face { font-family: ProximaNova; src: url(/fonts/ProximaNova.otf); }
-@font-face { font-family: ProximaNovaEB; src: url(/fonts/ProximaNovaEB.otf); }
-@font-face { font-family: ProximaNova-Light; src: url(/fonts/ProximaNova-Light.otf); }
-@font-face { font-family: ProximaNova-Bold; src: url(/fonts/ProximaNova-Bold.otf); }
 
 /* Global CSS */
 body { margin: 0; padding: 0; background: #262626; line-height: 22px; font-size: 14px; font-family: 'Open Sans', sans-serif; color: #FFF; min-height: 100%; font-weight: 300; }
