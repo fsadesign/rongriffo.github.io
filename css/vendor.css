@@ -1,7 +1,4 @@
-/* clearfix */
 .owl-carousel .owl-wrapper:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
-
-/* display none until init */
 .owl-carousel { display: none; position: relative; width: 100%; -ms-touch-action: pan-y; }
 .owl-carousel .owl-wrapper { display: none; position: relative; -webkit-transform: translate3d(0px, 0px, 0px); }
 .owl-carousel .owl-wrapper-outer { overflow: hidden; position: relative; width: 100%; }
@@ -9,38 +6,17 @@
 .owl-carousel .owl-item { float: left; }
 .owl-controls .owl-page, .owl-controls .owl-buttons div { cursor: pointer; }
 .owl-controls { -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent; }
-
-/* mouse grab icon */
 .grabbing { cursor: url(grabbing.png) 8 8, move; }
-
-/* fix */
 .owl-carousel .owl-wrapper, .owl-carousel .owl-item { -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -ms-backface-visibility: hidden; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); }
-
-/* 
- *  Owl Carousel CSS3 Transitions 
- *  v1.3.2
- */
 .owl-origin { -webkit-perspective: 1200px; -webkit-perspective-origin-x: 50%; -webkit-perspective-origin-y: 50%; -moz-perspective: 1200px; -moz-perspective-origin-x: 50%; -moz-perspective-origin-y: 50%; perspective: 1200px; }
-
-/* fade */
 .owl-fade-out { z-index: 10; -webkit-animation: fadeOut .7s both ease; -moz-animation: fadeOut .7s both ease; animation: fadeOut .7s both ease; }
 .owl-fade-in { -webkit-animation: fadeIn .7s both ease; -moz-animation: fadeIn .7s both ease; animation: fadeIn .7s both ease; }
-
-/* backSlide */
 .owl-backSlide-out { -webkit-animation: backSlideOut 1s both ease; -moz-animation: backSlideOut 1s both ease; animation: backSlideOut 1s both ease; }
 .owl-backSlide-in { -webkit-animation: backSlideIn 1s both ease; -moz-animation: backSlideIn 1s both ease; animation: backSlideIn 1s both ease; }
-
-/* goDown */
 .owl-goDown-out { -webkit-animation: scaleToFade .7s ease both; -moz-animation: scaleToFade .7s ease both; animation: scaleToFade .7s ease both; }
 .owl-goDown-in { -webkit-animation: goDown .6s ease both; -moz-animation: goDown .6s ease both; animation: goDown .6s ease both; }
-
-/* scaleUp */
 .owl-fadeUp-in { -webkit-animation: scaleUpFrom .5s ease both; -moz-animation: scaleUpFrom .5s ease both; animation: scaleUpFrom .5s ease both; }
 .owl-fadeUp-out { -webkit-animation: scaleUpTo .5s ease both; -moz-animation: scaleUpTo .5s ease both; animation: scaleUpTo .5s ease both; }
-
-/* Keyframes */
-
-/*empty*/
 @-webkit-keyframes empty {
 	0% { opacity: 1; }
 }
@@ -140,10 +116,6 @@
 @keyframes scaleUpTo {
 	to { opacity: 0; transform: scale(1.5); }
 }
-
-/* 
- *  02. Magnific Popup CSS
- */
 .mfp-bg { top: 0; left: 0; width: 100%; height: 100%; z-index: 1042; overflow: hidden; position: fixed; background: #0b0b0b; opacity: 0.8; filter: alpha(opacity=80); }
 .mfp-wrap { top: 0; left: 0; width: 100%; height: 100%; z-index: 1043; position: fixed; outline: none !important; -webkit-backface-visibility: hidden; }
 .mfp-container { text-align: center; position: absolute; width: 100%; height: 100%; left: 0; top: 0; padding: 0 8px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -188,11 +160,7 @@ button::-moz-focus-inner { padding: 0; border: 0; }
 .mfp-iframe-holder .mfp-close { top: -40px; }
 .mfp-iframe-scaler { width: 100%; height: 0; overflow: hidden; padding-top: 56.25%; }
 .mfp-iframe-scaler iframe { position: absolute; display: block; top: 0; left: 0; width: 100%; height: 100%; box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); background: #000; }
-
-/* Main image in popup */
 img.mfp-img { width: auto; max-width: 100%; height: auto; display: block; line-height: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 40px 0 40px; margin: 0 auto; }
-
-/* The shadow behind the image */
 .mfp-figure { line-height: 0; }
 .mfp-figure:after { content: ''; position: absolute; left: 0; top: 40px; bottom: 40px; display: block; right: 0; width: auto; height: auto; z-index: -1; box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); background: #444; }
 .mfp-figure small { color: #BDBDBD; display: block; font-size: 12px; line-height: 14px; }
@@ -202,10 +170,6 @@ img.mfp-img { width: auto; max-width: 100%; height: auto; display: block; line-h
 .mfp-image-holder .mfp-content { max-width: 100%; }
 .mfp-gallery .mfp-image-holder .mfp-figure { cursor: pointer; }
 @media screen and (max-width:800px) and (orientation:landscape), screen and (max-height:300px) {
-
-	/**
-	     * Remove all paddings around the image on small screen
-	     */
 	.mfp-img-mobile .mfp-image-holder { padding-left: 0; padding-right: 0; }
 	.mfp-img-mobile img.mfp-img { padding: 0; }
 	.mfp-img-mobile .mfp-figure:after { top: 0; bottom: 0; }
@@ -226,5 +190,3 @@ img.mfp-img { width: auto; max-width: 100%; height: auto; display: block; line-h
 .mfp-ie7 .mfp-container { padding: 0; }
 .mfp-ie7 .mfp-content { padding-top: 44px; }
 .mfp-ie7 .mfp-close { top: 0; right: 0; padding-top: 0; }
-
-/*# sourceMappingURL=vendor.css.map */
