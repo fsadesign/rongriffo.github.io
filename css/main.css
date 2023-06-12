@@ -322,7 +322,7 @@ header .logo a { display: block; margin: 0; padding: 0; border: none; font: 0/0 
 #resume .timeline-header p { font-family: "poppins-regular", sans-serif; font-size: 1.6rem; color: #888888; }
 #resume .timeline-content { margin-left: 35%; padding-left: 60px; }
 #resume .timeline-content h4 { position: relative; padding-bottom: 1.8rem; }
-#resume .timeline-content h4::after { content: ""; display: block; height: 3px; width: 50px; background: rgba(0, 0, 0, 0.2); position: absolute; left: 0; bottom: 0; }
+#resume .timeline-content h4::after { content: ""; display: block; height: 3px; width: 50px; background: #FA8072; position: absolute; left: 0; bottom: 0; }
 @media only screen and (max-width:1024px) {
     #resume .timeline-header { padding-right: 50px; }
     #resume .timeline-header h3 { font-size: 1.8rem; }
